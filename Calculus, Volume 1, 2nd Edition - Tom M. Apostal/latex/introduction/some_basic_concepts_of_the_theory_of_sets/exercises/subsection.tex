@@ -31,94 +31,96 @@
   \end{proof}
 
   \begin{proposition}
-    $C = \{x | x + 8 = 9\}$ can be designated as $\{TODO\}$ in roster notation.
+    $C = \{x | x + 8 = 9\}$ can be designated as $\{ 1 \}$ in roster notation.
   \end{proposition}
   \begin{proof}
     \begin{equation}
       \begin{split}
-        TODO & = TODO \\
-        & \therefore \{TODO\}
+        C & = \{x | x + 8 = 9\} \\
+        & = \{x | x = 9 - 8 \} \\
+        & = \{x | x = 1 \} \\
+        & \therefore \{ 1 \}
       \end{split}
     \end{equation}
   \end{proof}
 
   \begin{proposition}
-    $D = \{x | x^3 - 2x^2 + x = 2\}$ can be designated as $\{TODO\}$ in roster notation.
+    $D = \{x | x^3 - 2x^2 + x = 2\}$ can be designated as $\{2\}$ in roster notation.
   \end{proposition}
   \begin{proof}
     \begin{equation}
       \begin{split}
-        TODO & = TODO \\
-        & \therefore \{TODO\}
+        D & = \{x | x^3 - 2x^2 + x = 2\} \\
+        & = \{x | x^3 - 2x^2 + x - 2 = 0 \} \\
+        & = \{x | x^2(x - 2) + (x - 2) = 0 \} \\
+        & = \{x | (x^2 + 1)(x - 2) = 0 \} \\
+        & \therefore \{2\}
       \end{split}
     \end{equation}
   \end{proof}
 
   \begin{proposition}
-    $E = \{x | (x + 8)^2 = 9^2 \}$ can be designated as $\{TODO\}$ in roster notation.
+    $E = \{x | (x + 8)^2 = 9^2 \}$ can be designated as $\{-17, 1\}$ in roster notation.
   \end{proposition}
   \begin{proof}
     \begin{equation}
       \begin{split}
-        TODO & = TODO \\
-        & \therefore \{TODO\}
+        E & = \{x | (x + 8)^2 = 9^2 \} \\
+        & = \{x | x + 8 = \pm{9} \} \\
+        & = \{x | x = \pm{9} - 8 \} \\
+        & \therefore \{-17, 1\}
       \end{split}
     \end{equation}
   \end{proof}
 
   \begin{proposition}
-    $F = \{x | (x^2 + 16x)^2 = 17^2 \}$ can be designated as $\{TODO\}$ in roster notation.
+    $F = \{x | (x^2 + 16x)^2 = 17^2 \}$ can be designated as $\{-17, 1, -8 - \sqrt{47}, -8 + \sqrt{47}\}$ in roster notation.
   \end{proposition}
   \begin{proof}
     \begin{equation}
+      \label{eq:some_nontrivial_root}
       \begin{split}
-        TODO & = TODO \\
-        & \therefore \{TODO\}
+        F & = \{x | (x^2 + 16x)^2 = 17^2 \} \\
+        & = \{x | x^2 + 16x = \pm{17} \} \\
+        & = \{x | x^2 + 16x \pm{17} = 0 \} \\
+        & = \{x | x^2 + 16x \pm{17} = 0 \} \\
       \end{split}
     \end{equation}
+    
+    Using the quadratic formula:
+    \begin{definition}{Quadratic Equation}, analytical method for calculating the roots of a quadratic polynomial.
+      \begin{equation}
+        \begin{split}
+          x & = \frac{-b \pm{\sqrt{b^2 - 4ac}}}{2a} \text{, where } ax^2 + bx + c = 0
+        \end{split}
+      \end{equation}
+    \end{definition}
+    
+    Solving when the last term is $+17$:
+    \begin{equation}
+      \begin{split}
+        x & = \frac{-16 \pm{\sqrt{16^2 - 4(1)17}}}{2(1)} \\
+        & = -8 \pm{\frac{\sqrt{188}}{2}} \\
+        & = -8 \pm{\frac{\sqrt{188}}{\sqrt{2^2}}} \\
+        & = -8 \pm{\sqrt{188/4}} \\
+        & = -8 \pm{\sqrt{47}} \\
+        & \therefore \{-8 - \sqrt{47}, -8 + \sqrt{47}\}
+      \end{split}
+    \end{equation}
+
+    Solving when the last term is $-17$:
+    \begin{equation}
+      \begin{split}
+        0 & = x^2 + 16x - 17 \\
+        & = (x + 17)(x - 1) \\
+        & \therefore \{-17, 1\}
+      \end{split}
+    \end{equation}
+    
   \end{proof}
 
-  % \begin{itemize}
-   
-  %   \item $C = \{x | x + 8 = 9\}$
-    
-  %   \begin{math}
-  %     C = \{x | x = 1\}
-  %     C = \{1\}
-  %   \end{math}
-
-  %   \item $D = \{x | x^3 - 2x^2 + x = 2\}$
-    
-  %   \begin{math}
-  %     D = \{x | x^3 - 2x^2 + x = 2\} \\
-  %     D = \{x | x^3 - 2x^2 + x - 2 = 0\} \\
-  %     D = \{x | x^2(x - 2) + (x - 2) = 0\} \\
-  %     D = \{x | (x - 2)(x^2 + 1) = 0\} \\
-  %     D = \{x | (x - 2)(x^2 + 1) = 0\} \\
-  %     D = \{2\} \\
-  %   \end{math}
-
-  %   \item $E = \{x | (x + 8)^2 = 9^2 \}$
-    
-  %   \begin{math}
-  %     E = \{x | (x + 8)^2 = 9^2 \} \\
-  %     E = \{x | (x + 8) = \pm{9} \} \\
-  %     E = \{x | x = -9 - 8 \} \\
-  %     E = \{x | x = -17 \} \\
-  %     E = \{x | x = 9 - 8 \} \\
-  %     E = \{x | x = 1 \} \\
-  %     E = \{-17, 1\} \\
-  %   \end{math}
-
-  %   \item $F = \{x | (x^2 + 16x)^2 = 17^2 \}$
-    
-  %   \begin{math}
-  %     F = \{x | (x^2 + 16x)^2 = 17^2 \} \\
-  %     F = \{x | x^2 + 16x = \pm{17} \} \\
-  %     F = \{x | x^2 + 16x \pm{17} = 0 \} \\
-  %     F = \{x | x^2 + 16x \pm{17} = 0 \} \\
-  %     F = \{-17, 1, -8 + \sqrt{47}, -8 - \sqrt{47} \} \\
-  %   \end{math}
-  % \end{itemize}
-  % \item
+  \item For the sets in Exercise 1, note that $B \subseteq A$. List all the inclusion relations $\subseteq$ that hold among the sets $A$, $B$, $C$, $D$, $E$, $F$.
+  \begin{enumerate}
+    \item 
+  \end{enumerate}
 \end{enumerate}
