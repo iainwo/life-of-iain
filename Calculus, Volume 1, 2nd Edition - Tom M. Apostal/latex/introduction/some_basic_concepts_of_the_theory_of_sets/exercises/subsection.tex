@@ -231,4 +231,67 @@
       \end{equation}
     \end{proof}
   \end{enumerate}
+
+  \item Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ altogether, counting $\O$ and $S$.
+  \begin{equation}
+    \begin{split}
+      \mathcal{P(S)} = \bigcup\limits_{i=1}^{|S|} \bigcup\limits_{j=1}^{|S|-i+1} \{S_{i}, ..., s_{j}\} \cup \{\O\}
+    \end{split}
+  \end{equation}
+
+  \item Given the following four sets
+  \begin{math}
+    A = \{1, 2\}, B = \{\{1\}, \{2\}\}, C = \{\{1\},\{1, 2\}\}, D = \{\{1\}, \{2\}, \{1, 2\}\}
+  \end{math}
+  discuss the validty of the following statements (prove the ones that are true and explain why the others are not true).
+  \begin{enumerate}
+    \item \begin{proposition}
+      A = B
+    \end{proposition}
+    \begin{proof}
+      \begin{equation}
+        \begin{split}
+          & \exists x \in A: x \notin B \\
+          & \therefore A \neq B
+        \end{split}
+      \end{equation}
+    \end{proof}
+
+    \item \begin{proposition}
+      $A \subseteq B$
+    \end{proposition}
+    \begin{proof}
+      \begin{equation}
+        \begin{split}
+          & \forall x \in A: x \notin B \\
+          & \therefore A \nsubseteq B
+        \end{split}
+      \end{equation}
+    \end{proof}
+
+    \item \begin{proposition}
+      $A \subset C$
+    \end{proposition}
+    \begin{proof}
+      \begin{equation}
+        \begin{split}
+          & \forall x \in A: x \notin C \\
+          & \therefore A \not \subset C
+        \end{split}
+      \end{equation}
+    \end{proof}
+
+    \item \begin{proposition}
+      $A \in C$
+    \end{proposition}
+    \begin{proof}
+      \begin{equation}
+        \begin{split}
+          & \O \neq (\{A\} \cap C) \\
+          & \therefore A \in C
+        \end{split}
+      \end{equation}
+    \end{proof}
+
+  \end{enumerate}
 \end{enumerate}
