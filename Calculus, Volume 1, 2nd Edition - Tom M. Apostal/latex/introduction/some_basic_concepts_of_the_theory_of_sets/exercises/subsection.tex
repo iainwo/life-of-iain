@@ -142,6 +142,7 @@
 
 \begin{question} Let $A = \{1\}$, $B = \{1, 2\}$. Discuss the validity of the following statements (prove the ones that are true and explain why the others are not true).
   \begin{definition}{Set Equality}
+    \label{definition:set_equality}
     Two sets $A$ and $B$ are said to be equal (or identical) if they consisit of exactly the same elements, in which case we write $A = B$. If one of the sets contains an element not in the other, we say the sets are unequal and we write $A \neq B$.
   \end{definition}
   \begin{definition}{Subset}
@@ -295,4 +296,146 @@ Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ a
       \end{split}
     \end{equation}
   \end{proof}
+
+  \begin{subquestion}
+    $A \subset D$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \exists x \in A (x \not \in D) \\
+        & \therefore A \not \subset D
+      \end{split}
+    \end{equation}
+  \end{proof}
+
+  \begin{subquestion}
+    $B \subset C$
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \exists x \in B (x \not \in C) \\
+      & \therefore B \not \subset C
+    \end{align*}
+  \end{proof}
+
+  \begin{subquestion}
+    $B \subset D$
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \forall x \in B (x \in D) \\
+      & \therefore B \subset D
+    \end{align*}
+  \end{proof}
+
+  \begin{subquestion}
+    $B \in D$
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \forall x \in D (x \neq B) \\
+      & \therefore B \not \in D
+    \end{align*}
+  \end{proof}
+
+  \begin{subquestion}
+    $A \in D$
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \exists x \in D (x = A) \\
+      & \therefore A \in D
+    \end{align*}
+  \end{proof}
+
+\end{question}
+
+\begin{question}
+  Prove the following properties of set equality.
+
+  \begin{subquestion}
+    $\{a, a\} = \{ a \}$.
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \text{Every idiosyncracy is shared which can only be true of equivalent objects,} \\
+      & \forall x \in \{a, a\} \cup \{ a \} [x \in (\{a, a\} \cap \{ a \})] \\
+      & \text{Since no one set contains an element not in the other} \\
+      & \text{these sets can only be equal; by the} \\
+      & \text{Definition of Set Equality \ref{definition:set_equality}} \\
+      & \therefore \{a, a\} = \{ a \}
+    \end{align*}
+  \end{proof}
+
+  \begin{subquestion}
+    $\{a, b\} = \{b, a\}$.
+  \end{subquestion}
+
+  \begin{subquestion}
+    $\{a\} = \{b, c\}$ if and only if $a = b = c$
+  \end{subquestion}
+
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+\end{question}
+
+\begin{question}
+
+  \begin{subquestion}
+  \end{subquestion}
+
+  \begin{subquestion}
+  \end{subquestion}
+
 \end{question}
