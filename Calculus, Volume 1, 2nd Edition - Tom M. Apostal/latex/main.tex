@@ -15,6 +15,12 @@
 \newtheorem{axiom}{Axiom}
 \newtheorem{identity}{Identity}
 \newtheorem{claim}{Claim}
+\newtheorem{question}{Question}[subsection]
+\newtheorem{subquestion}{Q}[question]
+
+\renewcommand{\thequestion}{\arabic{question}}
+\renewcommand{\thesubquestion}{\arabic{question}.\arabic{subquestion}}
+
 
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}

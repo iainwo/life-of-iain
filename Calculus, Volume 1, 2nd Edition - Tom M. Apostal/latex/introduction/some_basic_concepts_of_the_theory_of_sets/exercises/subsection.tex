@@ -1,11 +1,10 @@
+\setcounter{subsection}{4}
 \subsection{Excercises}
 
-\begin{enumerate}
-  \item Use the roster notation to designate the following sets of real numbers.
-  
-  \begin{proposition}
+\begin{question} Use the roster notation to designate the following sets of real numbers.
+  \begin{subquestion}
     $A = \{ x | x^2 - 1 = 0\}$ can be designated as $\{-1, 1\}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \begin{split}
@@ -16,9 +15,9 @@
     \end{equation}
   \end{proof}
 
-  \begin{proposition}
+  \begin{subquestion}
     $B = \{x | (x-1)^2 = 0\}$ can be designated as $\{1\}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \begin{split}
@@ -30,9 +29,9 @@
     \end{equation}
   \end{proof}
 
-  \begin{proposition}
+  \begin{subquestion}
     $C = \{x | x + 8 = 9\}$ can be designated as $\{ 1 \}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \begin{split}
@@ -44,9 +43,9 @@
     \end{equation}
   \end{proof}
 
-  \begin{proposition}
+  \begin{subquestion}
     $D = \{x | x^3 - 2x^2 + x = 2\}$ can be designated as $\{2\}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \begin{split}
@@ -59,9 +58,9 @@
     \end{equation}
   \end{proof}
 
-  \begin{proposition}
+  \begin{subquestion}
     $E = \{x | (x + 8)^2 = 9^2 \}$ can be designated as $\{-17, 1\}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \begin{split}
@@ -73,9 +72,9 @@
     \end{equation}
   \end{proof}
 
-  \begin{proposition}
+  \begin{subquestion}
     $F = \{x | (x^2 + 16x)^2 = 17^2 \}$ can be designated as $\{-17, 1, -8 - \sqrt{47}, -8 + \sqrt{47}\}$ in roster notation.
-  \end{proposition}
+  \end{subquestion}
   \begin{proof}
     \begin{equation}
       \label{eq:some_nontrivial_root}
@@ -118,8 +117,9 @@
     \end{equation}
     
   \end{proof}
+\end{question}
 
-  \item For the sets in Exercise 1, note that $B \subseteq A$. List all the inclusion relations $\subseteq$ that hold among the sets $A$, $B$, $C$, $D$, $E$, $F$.
+\begin{question} For the sets in Exercise 1, note that $B \subseteq A$. List all the inclusion relations $\subseteq$ that hold among the sets $A$, $B$, $C$, $D$, $E$, $F$.
   \begin{enumerate}
     \item $A \subseteq A$
     \item $B \subseteq A$
@@ -137,8 +137,10 @@
     \item $E \subseteq F$
     \item $F \subseteq F$
   \end{enumerate}
+\end{question}
 
-  \item Let $A = \{1\}$, $B = \{1, 2\}$. Discuss the validity of the following statements (prove the ones that are true and explain why the others are not true).
+
+\begin{question} Let $A = \{1\}$, $B = \{1, 2\}$. Discuss the validity of the following statements (prove the ones that are true and explain why the others are not true).
   \begin{definition}{Set Equality}
     Two sets $A$ and $B$ are said to be equal (or identical) if they consisit of exactly the same elements, in which case we write $A = B$. If one of the sets contains an element not in the other, we say the sets are unequal and we write $A \neq B$.
   \end{definition}
@@ -146,152 +148,151 @@
     \label{definition:subset}
     A set $A$ is said to be a subset of a set $B$, and we write $A \subseteq B$ whenever every element of $A$ also belongs to $B$. We also say that $A$ is contained in $B$ or that $B$ contains $A$. The relation $\subseteq$ is referred to as set inclusion.
   \end{definition}
-  \begin{enumerate}
 
-    \item \begin{proposition}
-      $A \subset B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          \{ x \in A | \exists y \in B (x = y)\}
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $A \subset B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        \{ x \in A | \exists y \in B (x = y)\}
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $A \subseteq B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          \{ x \in A | \exists y \in B (x = y)\} \text{, by the definition of a subset \ref{definition:subset}}
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $A \subseteq B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        \{ x \in A | \exists y \in B (x = y)\} \text{, by the definition of a subset \ref{definition:subset}}
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $A \in B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \forall x \in B: x \neq A \\
-          & \therefore A \notin B
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $A \in B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \forall x \in B: x \neq A \\
+        & \therefore A \notin B
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $1 \in A$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          \exists x \in A(x = 1)
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $1 \in A$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        \exists x \in A(x = 1)
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $1 \subseteq A$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \forall x \in \mathcal{P(A)}: 1 \neq x \text{, where } \mathcal{P(A)} \text{ is the powerset of A and x each subset} \\
-          & \therefore 1 \not \subset A
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $1 \subseteq A$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \forall x \in \mathcal{P(A)}: 1 \neq x \text{, where } \mathcal{P(A)} \text{ is the powerset of A and x each subset} \\
+        & \therefore 1 \not \subset A
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $1 \subset B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \forall x \in \mathcal{P(B)}: 1 \neq x \text{, where } \mathcal{P(B)} \text{ is the powerset of B and x each subset} \\
-          & \therefore 1 \not \subset B
-        \end{split}
-      \end{equation}
-    \end{proof}
-  \end{enumerate}
+  \begin{subquestion}
+    $1 \subset B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \forall x \in \mathcal{P(B)}: 1 \neq x \text{, where } \mathcal{P(B)} \text{ is the powerset of B and x each subset} \\
+        & \therefore 1 \not \subset B
+      \end{split}
+    \end{equation}
+  \end{proof}
+\end{question}
 
-  \item Solve the previous exercise if $A = \{1\}$ and $B = \{ \{1 \}, 1 \}$.
-  \begin{enumerate}
-    \item \begin{proposition}
-      $A \subset B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          (\O \neq (A \cap B)) \land ((A \cap B) \subset B)
-        \end{split}
-      \end{equation}
-    \end{proof}
-  \end{enumerate}
-
-  \item Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ altogether, counting $\O$ and $S$.
+\begin{question}
+Solve the previous exercise if $A = \{1\}$ and $B = \{ \{1 \}, 1 \}$.
+  \begin{subquestion}
+    $A \subset B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        (\O \neq (A \cap B)) \land ((A \cap B) \subset B)
+      \end{split}
+    \end{equation}
+  \end{proof}
+\end{question}
+\begin{question}
+Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ altogether, counting $\O$ and $S$.
   \begin{equation}
     \begin{split}
       \mathcal{P(S)} = \bigcup\limits_{i=1}^{|S|} \bigcup\limits_{j=1}^{|S|-i+1} \{S_{i}, ..., s_{j}\} \cup \{\O\}
     \end{split}
   \end{equation}
+\end{question}
 
-  \item Given the following four sets
+\begin{question}x
+  Given the following four sets
   \begin{math}
     A = \{1, 2\}, B = \{\{1\}, \{2\}\}, C = \{\{1\},\{1, 2\}\}, D = \{\{1\}, \{2\}, \{1, 2\}\}
   \end{math}
   discuss the validty of the following statements (prove the ones that are true and explain why the others are not true).
-  \begin{enumerate}
-    \item \begin{proposition}
-      A = B
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \exists x \in A: x \notin B \\
-          & \therefore A \neq B
-        \end{split}
-      \end{equation}
-    \end{proof}
 
-    \item \begin{proposition}
-      $A \subseteq B$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \forall x \in A: x \notin B \\
-          & \therefore A \nsubseteq B
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    A = B
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \exists x \in A: x \notin B \\
+        & \therefore A \neq B
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $A \subset C$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \forall x \in A: x \notin C \\
-          & \therefore A \not \subset C
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $A \subseteq B$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \forall x \in A: x \notin B \\
+        & \therefore A \nsubseteq B
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-    \item \begin{proposition}
-      $A \in C$
-    \end{proposition}
-    \begin{proof}
-      \begin{equation}
-        \begin{split}
-          & \O \neq (\{A\} \cap C) \\
-          & \therefore A \in C
-        \end{split}
-      \end{equation}
-    \end{proof}
+  \begin{subquestion}
+    $A \subset C$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \forall x \in A: x \notin C \\
+        & \therefore A \not \subset C
+      \end{split}
+    \end{equation}
+  \end{proof}
 
-  \end{enumerate}
-\end{enumerate}
+  \begin{subquestion}
+    $A \in C$
+  \end{subquestion}
+  \begin{proof}
+    \begin{equation}
+      \begin{split}
+        & \O \neq (\{A\} \cap C) \\
+        & \therefore A \in C
+      \end{split}
+    \end{equation}
+  \end{proof}
+\end{question}
