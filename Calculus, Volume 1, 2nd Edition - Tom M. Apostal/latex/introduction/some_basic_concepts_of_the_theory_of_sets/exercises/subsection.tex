@@ -371,21 +371,74 @@ Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ a
   \begin{subquestion}
     $\{a, b\} = \{b, a\}$.
   \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \forall x \in \{a, b\}(x \in \{b, a\}) \land \forall x \in \{b, a\}(x \in \{a, b\}) \\
+      & \text{Since no one set contains an element not in the other} \\
+      & \text{these sets can only be equal; by the} \\
+      & \text{Definition of Set Equality \ref{definition:set_equality}} \\
+      & \therefore \{a, b\} = \{b, a\}
+    \end{align*}
+  \end{proof}
 
   \begin{subquestion}
     $\{a\} = \{b, c\}$ if and only if $a = b = c$
   \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \text{Let } A = \{a\} \text{ and } B = \{b, c\} \\
+      & \exists x \in B (x \not \in A) \implies A \neq B \\
+      & \text{Thus} \\
+      & b \neq a \lor c \neq a \implies A \neq B \\
+      & \text{Else} \\
+      & b = a = c \implies \forall x \in B (x \in A) \land \forall x \in A (x \in B) \implies A = B
+    \end{align*}
+  \end{proof}
 
 \end{question}
 
 \begin{question}
+  Commutative laws: $A \cup B = B \cup A$, $A \cap B = B \cap A$.
 \end{question}
+\begin{proof}
+  \begin{align*}
+    & \forall x \in A \cup B (x \in (B \cup A)) \land \forall x \in B \cup A (x \in (A \cup B)) \\
+    & \therefore \cup \text{ is commutative.} \\
+    & \text{The same proof can be applied to } \cap
+  \end{align*}
+\end{proof}
 
 \begin{question}
+  Associative laws: $A \cup (B \cup C) = (A \cup B) \cup C$, $A \cap (B \cap C) = (A \cap B) \cap C$.
 \end{question}
+\begin{proof}
+  \begin{align*}
+    & \forall x \in B(x \in (B \cup C)) \land \forall x \in C(x \in (B \cup C)) \\
+    & \text{The statement above applies to any union of sets, } \\
+    & \text{or union of sets formed from unions} \\
+    & \text{That is this property is maintained across} \\
+    & \text{ autoregressive applications of the union operator.} \\
+    & \therefore A \cup (B \cup C) = (A \cup B) \cup C \\
+    & \text{A similar proof ca be applied to } \cap
+  \end{align*}
+\end{proof}
 
 \begin{question}
+  Distributive laws: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.
 \end{question}
+\begin{proof}
+  \begin{align*}
+    & \text{For a simple set Z of atomic elements, the intersection can be computed pointwise} \\
+    & Z \cap Z' = \bigcup_{x \in Z} {x} \cap Z' \\
+    & \text{Let } Z = B \cup C \text{ and } Z' = A \text{ then} \\
+    & \text{This pointwise algorithm can be partitioned} \\
+    & \text{due to the fact the operations are pointwise/local/isolated to begin with} \\
+    & Z \cap Z' = \bigcup_{x \in B \cup C} x \cap A \\
+    & Z \cap Z' = (\bigcup_{x \in C} x \cap A) \cup (\bigcup_{x \in B} x \cap A) \\
+    & Z \cap Z' = (B \cap A) \cup (C \cap A) \\
+    & (B \cup C) \cap A = (B \cap A) \cup (C \cap A) \\
+  \end{align*}
+\end{proof}
 
 \begin{question}
 \end{question}
