@@ -407,12 +407,28 @@ Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ a
     & \text{The same proof can be applied to } \cap
   \end{align*}
 \end{proof}
+\begin{proof}
+  Second variant. From Calculus, Volume 1, 2nd Edition.
+  \begin{align*}
+    & \text{Let } X = A \cup B \text{, } Y = B \cup A. \\
+    & \text{To prove that } X = Y \text{ we prove that } X \subseteq Y \text{ and } Y \subseteq X. \\
+    & \text{Let } x \in X. \text{Then } x \text{ is in at least one of } A \text{ or } B. \\
+    & \text{Hence, } x \text{ is in at least one of } B \text{ or } A \text{; so } x \in Y. \\
+    & \text{Thus, every element of } X \text{ is also in } Y \text{so } X \subseteq Y. \\
+    & \text{The same can be demonstrated of } Y \subseteq X. \\
+    & \therefore X = Y.
+  \end{align*}
+\end{proof}
 
 \begin{question}
   Associative laws: $A \cup (B \cup C) = (A \cup B) \cup C$, $A \cap (B \cap C) = (A \cap B) \cap C$.
 \end{question}
 \begin{proof}
   \begin{align*}
+    & \text{To prove the associative property of } \cup. \\
+    & \text{We will prove the binary relation is associative} \\
+    & \text{by consequence this means that any recursive composition of the operator is also associative.} \\
+    & \text{Take the relationship } B \cup C. \text{ Then the relation is a superset of the members} \\ 
     & \forall x \in B(x \in (B \cup C)) \land \forall x \in C(x \in (B \cup C)) \\
     & \text{The statement above applies to any union of sets, } \\
     & \text{or union of sets formed from unions} \\
@@ -420,6 +436,18 @@ Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ a
     & \text{ autoregressive applications of the union operator.} \\
     & \therefore A \cup (B \cup C) = (A \cup B) \cup C \\
     & \text{A similar proof ca be applied to } \cap
+  \end{align*}
+\end{proof}
+\begin{proof}
+  Second variant. From \href{http://mathonline.wikidot.com/associative-laws-of-sets}{Mathonline}.
+  \begin{align*}
+    & \text{Suppose that } x \in (A \cup B) \cup C. \\
+    & \text{Then it follows that } x \in (A \cup B) \text{ or } x \in C. \\
+    & \text{Then } x \in A \text{ or } x \in B \text{ or } x \in C. \\
+    & \text{Hence, } x \in A \cup (B \cup C). \\
+    & \text{Thus, } (A \cup B) \cup C \subseteq A \cup (B \cup C). \\
+    & \text{The same argument can be used to show that the RHS} \subseteq \text{LHS.} \\
+    & \therefore (A \cup B) \cup C = A \cup (B \cup C)
   \end{align*}
 \end{proof}
 
@@ -439,56 +467,258 @@ Given the set $S = \{1, 2, 3, 4\}$. Display all subsets of $S$. There are $16$ a
     & (B \cup C) \cap A = (B \cap A) \cup (C \cap A) \\
   \end{align*}
 \end{proof}
+\begin{proof}
+  Second variant. From \href{https://math.libretexts.org/Courses/Mount_Royal_University/MATH_1150%3A_Mathematical_Reasoning/2%3A_Basic_Concepts_of_Sets/2.3%3A_Properties_of_Sets}{Pamini Thangarajah}.
+  \begin{align*}
+    & \text{Let } x \in A \cap (B \cup C). \\
+    & \text{Then } x \in A \text{ and } x \in (B \cup C). \\
+    & \text{Then } x \in A \text{ and } x \in B \text{ or } x \in C. \\
+    & \text{Which implies } x \in A \text{ and } x \in B \text{ or } x \in A \text{ and } x \in C. \\
+    & \text{Hence } x \in (A \cap B) \cup (A \cap C). \\
+    & \text{Thus } A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C). \\
+    & \text{The same argument can be made that the RHS} \subseteq \text{LHS.} \\
+    & \therefore A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
+  \end{align*}
+\end{proof}
 
 \begin{question}
+  $A \cup A = A, A \cap A = A$
+\end{question}
+\begin{proof}
+  The proof below can also be used for intersections by swapping out the or(s) for and(s).
+  \begin{align*}
+    & \text{Let } x \in A \cup A'. \\
+    & \text{Then } x \in A \text{ or } x \in A'. \\
+    & \text{If A' = A, then } x \in A \text{ or } x \in A. \\
+    & \text{Hence, } (A \cup A) \subseteq A. \\
+    & \text{The same process can be used to prove } A \subseteq (A \cup A). \\
+    & \therefore (A \cup A) = A.
+  \end{align*}
+\end{proof}
+
+\begin{question}
+  $ A \subseteq A \cup B, A \cap B \subseteq A. $
+\end{question}
+\begin{proof}
+  $\text{We will prove } A \subseteq A \cup B.$
+  \begin{align*}
+    & \text{Let } x \in A \cup B. \\
+    & \text{Then } x \in A \text{ or } x \in B. \\
+    & \text{Hence } x \in A \implies x \in A \cup B. \\
+    & \therefore A \subseteq A \cup B.
+  \end{align*}
+\end{proof}
+\begin{proof}
+  $\text{We will prove } A \cap B \subseteq A.$
+  \begin{align*}
+    & \text{Let } x \in A \cap B. \\
+    & \text{Then } x \in A \text{ and } x \in B. \\
+    & \text{Hence, } x \in  A \cap B \implies x \in A. \\
+    & \therefore A \cap B \subseteq A.
+  \end{align*}
+\end{proof}
+
+\begin{question}
+  $ A \cup \O = A \text{, } A \cap \O = \O $
+\end{question}
+\begin{proof}
+  Proving $ A \cup \O = A$
+  \begin{align*}
+    & \text{Let } x \in A \cup \O. \\
+    & \text{Then } x \in A \text{ or } x \in \O. \\
+    & \text{Since } x \in \O \text{ is always false: }  x \in A \cup \O \implies x \in A. \\
+    & \text{Hence, both LHS and RHS are identical by definition.} \\
+    & \therefore A \cup \O = A.
+  \end{align*}
+\end{proof}
+\begin{proof}
+  Proving $A \cap \O = \O $
+  \begin{align*}
+    & \text{Let } x \in A \cap \O. \\
+    & \text{Then } x \in A \text{ and } x \in \O. \\
+    & \text{By definition the empty set } \O \text{ is empty.} \\
+    & \text{Hence, } x \in \O \implies false. \\
+    & \text{Hence, } x \in A \text{ and } x \in \O \implies \text{false}. \\
+    & \text{Thus, } A \cap \O \text{ has no elements and is always empty}. \\
+    & \therefore A \cap \O = \O
+  \end{align*}
+\end{proof}
+
+\begin{question}
+  $ A \cup (A \cap B) = A \text{, } A \cap (A \cup B) = A$
+\end{question}
+\begin{proof}
+  Proving $A \cup (A \cap B) = A$. The same approach can be used for the second equivalence class.
+  \begin{align*}
+    & \text{By the distributive property of sets, } A \cup (A \cap B) \implies (A \cup A) \cap (A \cup B). \\
+    & \text{Let } x \in (A \cup A) \cap (A \cup B). \\
+    & \text{Then } x \in (A \cup A) \text{ and } x \in (A \cup B). \\
+    & \text{Then } x \in A \text{ or } x \in A \text{ and } x \in A \text{ or } x \in B. \\
+    & \text{Hence, } x \not \in A \implies x \not \in A \cup (A \cap B). \\
+    & \text{Thus, } A \cup (A \cap B) \subseteq A. \\
+    & \text{By the simplified definition above } A \subseteq A \cup (A \cap B). \\
+    & \therefore A \cup (A \cap B) = A.
+  \end{align*}
+\end{proof}
+
+\begin{question}
+  If $ A \subseteq C$ and $B \subseteq C$, then $A \cup B \subseteq C$.
+\end{question}
+\begin{proof}
+  \begin{align*}
+    & \text{Let } x \in A \cup B. \\
+    & \text{Then } x \in A \text{ or } x \in B. \\
+    & \text{Then } x \in A \text{ or } x \in B \implies x \in C. \\
+    & \text{Hence } x \in A \implies x \in C \text{ and } x \in B \implies x \in C. \\
+    & \text{Hence } A \subseteq C \text{ and } B \subseteq C. \\
+    & \therefore A \subseteq C \land B \subseteq C \implies A \cup B \subseteq C.
+  \end{align*}
+\end{proof}
+
+\begin{question}
+  If $C \subseteq A$ and $C \subseteq B$, then $C \subseteq A \cap B$.
+\end{question}
+\begin{proof}
+  \begin{align*}
+    & \text{Let } x \in C. \\
+    & \text{If } C \subseteq A \text{ and } C \subseteq B \implies x \in A \land x \in B. \\ 
+    & \therefore C \subseteq A \cap B.
+  \end{align*}
+\end{proof}
+
+
+\begin{question}
+
+  \begin{theorem}
+    Subset Transitivity.
+    If $B \subset C$ and $A \subset B$ then $A \subset C$.
+    \begin{proof}
+      \begin{align*}
+        & \text{Let } A, B, C \text{ be sets with the relationship } A \subset B \text{ and } B \subset C. \\
+        & \text{Then } A \subset B \text{ and } B \subset C \text{ can be restated } A \subset B \subset C. \\
+        & \text{Hence, } x \in A \implies x \in B \implies x \in C. \\
+        & \therefore A \subset C. \\
+        & \text{This generalizes to improper subsets by relaxing binary "proper subset" relation to allow equivalence.}
+      \end{align*}
+    \end{proof}
+  \end{theorem} 
+
+  \begin{subquestion}
+    If $ A \subset B$ and $B \subset C$, prove that $A \subset C$.
+  \end{subquestion}
+  \begin{proof}
+    By the Subset Transitivity Theorem this is true.
+  \end{proof}
+
+  \begin{subquestion}
+    If $A \subseteq B$ and $B \subseteq C$, prove that $A \subseteq C$.
+  \end{subquestion}
+  \begin{proof}
+    By the Subset Transitivity Theorem this is true.
+  \end{proof}
+
+  \begin{subquestion}
+    What can you conclude if $A \subset B$ and $B \subseteq C$?
+  \end{subquestion}
+  \begin{enumerate}
+    \item $A \subset C$
+    \item $A \neq C$
+  \end{enumerate}
+
+  \begin{subquestion}
+    If $x \in A$ and $A \subseteq B$, is it necessarily true that $x \in B$?
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & A \subseteq B \text{ restated: } A \subset B \text{ or } A = B. \\
+      & \text{Hence, } x \in A \implies x \in B. \\
+      & \therefore x \in B.
+    \end{align*}
+  \end{proof}
+
+  \begin{subquestion}
+    If $x \in A$ and $A \in B$, is it necessarily true that $x \in B$?
+  \end{subquestion}
+  \begin{proof}
+    \begin{align*}
+      & \text{Let } B = \{ A \}. \text{ and } A = \{ \O. \} \\
+      & \text{Then } A \in B. \\
+      & \text{Hence, } \O \not \in B. \text { But } \{\O\} \in B. \\
+      & \therefore x \in A \not \implies x \in B.
+    \end{align*}
+  \end{proof}
+
 \end{question}
 
 \begin{question}
+  $A - (B \cap C) = (A - B) \cup (A - C)$.
 \end{question}
+\begin{proof}
+  \begin{align*}
+    & \text{Let } x \in A - (B \cap C). \\
+    & \text{Then } x \in A \text{ and } x \not \in B \cap C. \\
+    & \text{Then } x \in A \text{ and } x \not \in B \text{ and } x \not \in C. \\
+    & \text{Then } x \in A \text{ and } x \not \in B \text{ and } x \in A \text{ and } x \not \in C. \\
+    & \text{Hence } A - (B \cap C) \subseteq (A - B) \cup (A - C). \\
+    & \text{A similar argument can be made for } (A - B) \cup (A - C). \\
+    & \therefore A - (B \cap C) = (A - B) \cup (A - C).
+  \end{align*}
+\end{proof}
 
 \begin{question}
+  Let $F$ be a class of sets. Then $B - \bigcup\limits_{A \in F}{A} = \bigcap\limits_{A \in F}{(B-A)}$ and $B - \bigcap\limits_{A \in F}{A} = \bigcup\limits_{A \in F}{B - A}$.
 \end{question}
-
-\begin{question}
-\end{question}
-
-\begin{question}
-\end{question}
-
-\begin{question}
-\end{question}
+\begin{proof}
+  \begin{align*}
+    & \text{Let } x \in (B - \bigcup\limits_{A \in F}{A}). \\
+    & \text{Then } x \in B \text{ and } x \not \in \bigcup\limits_{A \in F}{A}. \\
+    & \text{Let } C \in F. \\
+    & \text{Then } x \in B \text{ and } x \not \in C \text{ and } x \in B \text{ and } x \not \in \bigcup\limits_{A \in (F - C)}{A}. \\
+    & \text{Then } x \in (B - C) \text{ and } x \in (B - \bigcup\limits_{A \in (F - C)}{A}). \\
+    & \text{Then } x \in (B - C) \cap x \in (B - \bigcup\limits_{A \in (F - C)}{A}). \\
+    & \text{Hence, } x \in \bigcap\limits_{A \in F}{(B-A)}. \\
+    & \text{Thus, } B - \bigcup\limits_{A \in F}{A} \subseteq \bigcap\limits_{A \in F}{(B-A)}. \\
+    & \text{A similar argument can be made for } \bigcap\limits_{A \in F}{(B-A)} \subseteq B - \bigcup\limits_{A \in F}{A}. \\
+    & \therefore B - \bigcup\limits_{A \in F}{A} = \bigcap\limits_{A \in F}{(B-A)}.
+  \end{align*}
+\end{proof}
 
 \begin{question}
 
   \begin{subquestion}
+    Prove that one of the following two formulas is always right and the other one is sometimes wrong:
+
+    \begin{enumerate}
+      \item $A - (B - C) = (A - B) \cup C$,
+      \begin{proof}
+        We will prove this theorem is not always true.
+        \begin{align*}
+          & \text{Let } x \in A - (B - C) \text{ and C = \{B, \O\}.} \\
+          & \text{Then } x \in A - (\O). \\
+          & \text{Then } x \in A. \\
+          & \text{But the RHS evaluates to } A \cup \O. \\
+          & \therefore A - (B - C) \neq (A - B) \cup C.
+        \end{align*}
+      \end{proof}
+      \item $A - (B \cup C) = (A - B) - C$.
+      \begin{proof}
+        We will prove this is always true.
+        \begin{align*}
+          & \text{Let } x \in A - (B \cup C). \\
+          & \text{Then } x \in A \text{ and } x \not \in B \cup C. \\
+          & \text{Then } x \in A \text{ and } x \not \in B \text{ and } x \in A \text{ and } x \not \in C. \\
+          & \text{Then } x \in A - B - C. \\
+          & \text{Thus, } A - (B \cup C) \subseteq (A - B) - C. \\
+          & \text{A similar argument can be made for } (A - B) - C \subseteq A - (B \cup C). \\
+          & \therefore A - (B \cup C) = (A - B) - C.
+        \end{align*}
+      \end{proof}
+    \end{enumerate}
   \end{subquestion}
 
   \begin{subquestion}
+    State an additional necessary and sufficient condition for the formula which is sometimes incorrect to be always right.
   \end{subquestion}
-
-  \begin{subquestion}
-  \end{subquestion}
-
-  \begin{subquestion}
-  \end{subquestion}
-
-  \begin{subquestion}
-  \end{subquestion}
-
-\end{question}
-
-\begin{question}
-\end{question}
-
-\begin{question}
-\end{question}
-
-\begin{question}
-
-  \begin{subquestion}
-  \end{subquestion}
-
-  \begin{subquestion}
-  \end{subquestion}
+  $B \subseteq C$.
 
 \end{question}
